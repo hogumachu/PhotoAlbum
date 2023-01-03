@@ -61,7 +61,10 @@ final class AlbumListView: UIView {
     private func setupAttributes() {
         self.statusView.backgroundColor = .lightGray
         
-        self.navigationView.configure(.init(type: .none, title: "앨범"))
+        self.navigationView.do {
+            $0.backgroundColor = .lightGray
+            $0.configure(.init(type: .none, title: "앨범"))
+        }
         
         self.tableView.do {
             $0.backgroundColor = .white

@@ -8,11 +8,13 @@
 import Foundation
 import RxSwift
 import RxRelay
+import Photos
 
 enum AlbumListViewModelEvent {
     
     case reloadData
     case showAlert
+    case showPhotoList(collection: PHAssetCollection)
     
 }
 
@@ -53,8 +55,7 @@ final class AlbumListViewModel {
         
         switch item {
         case .album(let model):
-            // TODO: - Model
-            print(model)
+            self.viewModelEventRelay.accept(.showPhotoList(collection: model.collection))
         }
     }
     
@@ -91,7 +92,12 @@ final class AlbumListViewModel {
     private func makeSections(albums: [Album]) -> [Section] {
         let items = albums
             .map { album -> Item in
-                return .album(.init(thumbnailAsset: album.thumbnailAsset, title: album.title, imageCount: album.count))
+                return .album(.init(
+                    collection: album.collection,
+                    thumbnailAsset: album.thumbnailAsset,
+                    title: album.title,
+                    imageCount: album.count
+                ))
             }
         return [.content(items)]
     }

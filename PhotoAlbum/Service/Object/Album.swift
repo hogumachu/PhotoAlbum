@@ -9,6 +9,7 @@ import Photos
 
 struct Album {
     
+    let collection: PHAssetCollection
     let thumbnailAsset: PHAsset?
     let title: String?
     let count: Int
