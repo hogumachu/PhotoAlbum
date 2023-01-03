@@ -103,7 +103,6 @@ final class NavigationView: UIView {
             $0.tintColor = .black
             $0.contentMode = .center
             $0.addTarget(self, action: #selector(leftButtonClicked(_:)), for: .touchUpInside)
-            $0.adjustsImageWhenHighlighted = true
         }
         
         self.separator.do {

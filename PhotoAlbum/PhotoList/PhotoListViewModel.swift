@@ -65,7 +65,7 @@ final class PhotoListViewModel {
         case .photo(let model):
             self.viewModelEventRelay.accept(.showAlert(
                 title: "사진 정보",
-                message: "파일명 : \(model.asset?.fileName ?? "")\n파일 크키 :\(model.asset?.size ?? "0 MB")"
+                message: "파일명 : \(model.asset?.fileName ?? "")\n파일 크키 : \(model.asset?.size ?? "0 MB")"
             ))
         }
     }

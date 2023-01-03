@@ -69,7 +69,7 @@ final class AlbumListViewModel {
     }
     
     private func requestAuthorization() {
-        PhotoManager.requestAuthorization{ [weak self] authorized in
+        PhotoManager.shared.requestAuthorization{ [weak self] authorized in
             if authorized {
                 self?.fetchAlbumList()
             } else {
