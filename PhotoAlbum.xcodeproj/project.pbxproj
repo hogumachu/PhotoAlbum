@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBAE4A38CB06401BEC42EEBC /* Pods_PhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F5A7B813F9CCF111E7D8C9 /* Pods_PhotoAlbum.framework */; };
 		F1F12F4B2964320D00D8CE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F4A2964320D00D8CE21 /* AppDelegate.swift */; };
 		F1F12F4D2964320D00D8CE21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F4C2964320D00D8CE21 /* SceneDelegate.swift */; };
-		F1F12F4F2964320D00D8CE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F4E2964320D00D8CE21 /* ViewController.swift */; };
-		F1F12F522964320D00D8CE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F12F502964320D00D8CE21 /* Main.storyboard */; };
 		F1F12F542964320F00D8CE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F12F532964320F00D8CE21 /* Assets.xcassets */; };
 		F1F12F572964320F00D8CE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F12F552964320F00D8CE21 /* LaunchScreen.storyboard */; };
+		F1F12F602964343E00D8CE21 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F5F2964343E00D8CE21 /* Array+.swift */; };
+		F1F12F622964346300D8CE21 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F612964346300D8CE21 /* UIColor+.swift */; };
+		F1F12F642964350800D8CE21 /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */; };
+		F1F12F662964352F00D8CE21 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F652964352F00D8CE21 /* UITableView+.swift */; };
+		F1F12F682964354300D8CE21 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F672964354300D8CE21 /* UICollectionView+.swift */; };
+		F1F12F6B296435D900D8CE21 /* AlbumListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F6A296435D900D8CE21 /* AlbumListTableViewCell.swift */; };
+		F1F12F6D29643A3500D8CE21 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F6C29643A3500D8CE21 /* AlbumListViewController.swift */; };
+		F1F12F6F29643A3E00D8CE21 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F6E29643A3E00D8CE21 /* AlbumListViewModel.swift */; };
+		F1F12F7129643A4800D8CE21 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7029643A4800D8CE21 /* AlbumListView.swift */; };
+		F1F12F7529643AEB00D8CE21 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7429643AEB00D8CE21 /* NavigationView.swift */; };
+		F1F12F782964471E00D8CE21 /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F772964471E00D8CE21 /* PhotoRepository.swift */; };
+		F1F12F7B29645B5600D8CE21 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7A29645B5600D8CE21 /* Album.swift */; };
+		F1F12F7E296461EF00D8CE21 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */; };
+		F1F12F85296471C300D8CE21 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */; };
+		F1F12F87296471C900D8CE21 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */; };
+		F1F12F89296471CE00D8CE21 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F88296471CE00D8CE21 /* PhotoListView.swift */; };
+		F1F12F8B296471D600D8CE21 /* PhtoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */; };
+		F1F12F8D2964778E00D8CE21 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8C2964778E00D8CE21 /* Photo.swift */; };
+		F1F12F8F29647B9900D8CE21 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */; };
+		F1F12F9129647F5600D8CE21 /* PHAsset+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F9029647F5600D8CE21 /* PHAsset+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D17B1D7E0202712FF5838FD /* Pods-PhotoAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoAlbum.debug.xcconfig"; path = "Target Support Files/Pods-PhotoAlbum/Pods-PhotoAlbum.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC747DD1723CABEC7C3D4DB /* Pods-PhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoAlbum.release.xcconfig"; path = "Target Support Files/Pods-PhotoAlbum/Pods-PhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		81F5A7B813F9CCF111E7D8C9 /* Pods_PhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F12F472964320D00D8CE21 /* PhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F12F4A2964320D00D8CE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F12F4C2964320D00D8CE21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1F12F4E2964320D00D8CE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1F12F512964320D00D8CE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1F12F532964320F00D8CE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F12F562964320F00D8CE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F12F582964320F00D8CE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F12F5F2964343E00D8CE21 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		F1F12F612964346300D8CE21 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SnapKit.swift"; sourceTree = "<group>"; };
+		F1F12F652964352F00D8CE21 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		F1F12F672964354300D8CE21 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		F1F12F6A296435D900D8CE21 /* AlbumListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTableViewCell.swift; sourceTree = "<group>"; };
+		F1F12F6C29643A3500D8CE21 /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		F1F12F6E29643A3E00D8CE21 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		F1F12F7029643A4800D8CE21 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		F1F12F7429643AEB00D8CE21 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		F1F12F772964471E00D8CE21 /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
+		F1F12F7A29645B5600D8CE21 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		F1F12F88296471CE00D8CE21 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhtoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1F12F8C2964778E00D8CE21 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		F1F12F9029647F5600D8CE21 /* PHAsset+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAE4A38CB06401BEC42EEBC /* Pods_PhotoAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30767AA5E7F1F7B0D8BA0B3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F5A7B813F9CCF111E7D8C9 /* Pods_PhotoAlbum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69C39D8DA3E66F2E6127BE4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D17B1D7E0202712FF5838FD /* Pods-PhotoAlbum.debug.xcconfig */,
+				6FC747DD1723CABEC7C3D4DB /* Pods-PhotoAlbum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F1F12F3E2964320D00D8CE21 = {
 			isa = PBXGroup;
 			children = (
 				F1F12F492964320D00D8CE21 /* PhotoAlbum */,
 				F1F12F482964320D00D8CE21 /* Products */,
+				69C39D8DA3E66F2E6127BE4B /* Pods */,
+				30767AA5E7F1F7B0D8BA0B3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +118,95 @@
 			children = (
 				F1F12F4A2964320D00D8CE21 /* AppDelegate.swift */,
 				F1F12F4C2964320D00D8CE21 /* SceneDelegate.swift */,
-				F1F12F4E2964320D00D8CE21 /* ViewController.swift */,
-				F1F12F502964320D00D8CE21 /* Main.storyboard */,
+				F1F12F5E2964342100D8CE21 /* Extension */,
+				F1F12F76296446B500D8CE21 /* Service */,
+				F1F12F7C296461E300D8CE21 /* Manager */,
+				F1F12F7229643AD600D8CE21 /* Common */,
+				F1F12F69296435C100D8CE21 /* AlbumList */,
+				F1F12F83296471AB00D8CE21 /* PhotoList */,
 				F1F12F532964320F00D8CE21 /* Assets.xcassets */,
 				F1F12F552964320F00D8CE21 /* LaunchScreen.storyboard */,
 				F1F12F582964320F00D8CE21 /* Info.plist */,
 			);
 			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		F1F12F5E2964342100D8CE21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F5F2964343E00D8CE21 /* Array+.swift */,
+				F1F12F612964346300D8CE21 /* UIColor+.swift */,
+				F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */,
+				F1F12F652964352F00D8CE21 /* UITableView+.swift */,
+				F1F12F672964354300D8CE21 /* UICollectionView+.swift */,
+				F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */,
+				F1F12F9029647F5600D8CE21 /* PHAsset+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F1F12F69296435C100D8CE21 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F6C29643A3500D8CE21 /* AlbumListViewController.swift */,
+				F1F12F6E29643A3E00D8CE21 /* AlbumListViewModel.swift */,
+				F1F12F7029643A4800D8CE21 /* AlbumListView.swift */,
+				F1F12F6A296435D900D8CE21 /* AlbumListTableViewCell.swift */,
+			);
+			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		F1F12F7229643AD600D8CE21 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F7329643AE300D8CE21 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F1F12F7329643AE300D8CE21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F7429643AEB00D8CE21 /* NavigationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1F12F76296446B500D8CE21 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F772964471E00D8CE21 /* PhotoRepository.swift */,
+				F1F12F7929645B4700D8CE21 /* Object */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F1F12F7929645B4700D8CE21 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F7A29645B5600D8CE21 /* Album.swift */,
+				F1F12F8C2964778E00D8CE21 /* Photo.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		F1F12F7C296461E300D8CE21 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F1F12F83296471AB00D8CE21 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */,
+				F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */,
+				F1F12F88296471CE00D8CE21 /* PhotoListView.swift */,
+				F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */,
+			);
+			path = PhotoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F12F5B2964320F00D8CE21 /* Build configuration list for PBXNativeTarget "PhotoAlbum" */;
 			buildPhases = (
+				7421A551BA9681B904377EAD /* [CP] Check Pods Manifest.lock */,
 				F1F12F432964320D00D8CE21 /* Sources */,
 				F1F12F442964320D00D8CE21 /* Frameworks */,
 				F1F12F452964320D00D8CE21 /* Resources */,
+				898B5B35AE70280933852FB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +271,86 @@
 			files = (
 				F1F12F572964320F00D8CE21 /* LaunchScreen.storyboard in Resources */,
 				F1F12F542964320F00D8CE21 /* Assets.xcassets in Resources */,
-				F1F12F522964320D00D8CE21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7421A551BA9681B904377EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898B5B35AE70280933852FB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoAlbum/Pods-PhotoAlbum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoAlbum/Pods-PhotoAlbum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoAlbum/Pods-PhotoAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1F12F432964320D00D8CE21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F12F4F2964320D00D8CE21 /* ViewController.swift in Sources */,
+				F1F12F6F29643A3E00D8CE21 /* AlbumListViewModel.swift in Sources */,
+				F1F12F7129643A4800D8CE21 /* AlbumListView.swift in Sources */,
+				F1F12F642964350800D8CE21 /* UIView+SnapKit.swift in Sources */,
+				F1F12F7E296461EF00D8CE21 /* PhotoManager.swift in Sources */,
+				F1F12F9129647F5600D8CE21 /* PHAsset+.swift in Sources */,
+				F1F12F8D2964778E00D8CE21 /* Photo.swift in Sources */,
+				F1F12F682964354300D8CE21 /* UICollectionView+.swift in Sources */,
+				F1F12F89296471CE00D8CE21 /* PhotoListView.swift in Sources */,
+				F1F12F602964343E00D8CE21 /* Array+.swift in Sources */,
+				F1F12F6D29643A3500D8CE21 /* AlbumListViewController.swift in Sources */,
+				F1F12F662964352F00D8CE21 /* UITableView+.swift in Sources */,
+				F1F12F6B296435D900D8CE21 /* AlbumListTableViewCell.swift in Sources */,
+				F1F12F7529643AEB00D8CE21 /* NavigationView.swift in Sources */,
+				F1F12F87296471C900D8CE21 /* PhotoListViewModel.swift in Sources */,
+				F1F12F7B29645B5600D8CE21 /* Album.swift in Sources */,
+				F1F12F782964471E00D8CE21 /* PhotoRepository.swift in Sources */,
 				F1F12F4B2964320D00D8CE21 /* AppDelegate.swift in Sources */,
+				F1F12F8F29647B9900D8CE21 /* UIScreen+.swift in Sources */,
+				F1F12F85296471C300D8CE21 /* PhotoListViewController.swift in Sources */,
 				F1F12F4D2964320D00D8CE21 /* SceneDelegate.swift in Sources */,
+				F1F12F8B296471D600D8CE21 /* PhtoListCollectionViewCell.swift in Sources */,
+				F1F12F622964346300D8CE21 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F1F12F502964320D00D8CE21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1F12F512964320D00D8CE21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1F12F552964320F00D8CE21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +480,7 @@
 		};
 		F1F12F5C2964320F00D8CE21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D17B1D7E0202712FF5838FD /* Pods-PhotoAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +491,7 @@
 				INFOPLIST_FILE = PhotoAlbum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +503,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F1F12F5D2964320F00D8CE21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC747DD1723CABEC7C3D4DB /* Pods-PhotoAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +520,7 @@
 				INFOPLIST_FILE = PhotoAlbum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
