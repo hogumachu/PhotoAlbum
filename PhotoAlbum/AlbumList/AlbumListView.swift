@@ -22,6 +22,10 @@ final class AlbumListView: UIView {
         didSet { self.tableView.dataSource = self.dataSource }
     }
     
+    private struct ViewConstraint {
+        static let navigationColor = UIColor(hex: "EDEDED")
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -59,10 +63,10 @@ final class AlbumListView: UIView {
     }
     
     private func setupAttributes() {
-        self.statusView.backgroundColor = .lightGray
+        self.statusView.backgroundColor = ViewConstraint.navigationColor
         
         self.navigationView.do {
-            $0.backgroundColor = .lightGray
+            $0.backgroundColor = ViewConstraint.navigationColor
             $0.configure(.init(type: .none, title: "앨범"))
         }
         
@@ -71,8 +75,9 @@ final class AlbumListView: UIView {
             $0.separatorStyle = .none
             $0.showsVerticalScrollIndicator = false
             $0.registerCell(cell: AlbumListTableViewCell.self)
-            $0.sectionHeaderHeight = .leastNonzeroMagnitude
-            $0.sectionFooterHeight = .leastNonzeroMagnitude
+            $0.tableHeaderView = UIView().then({
+                $0.frame = CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude)
+            })
         }
     }
     

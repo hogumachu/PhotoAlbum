@@ -25,6 +25,10 @@ final class PhotoListView: UIView {
         didSet { self.collectionView.dataSource = self.dataSource }
     }
     
+    private struct ViewConstraint {
+        static let navigationColor = UIColor(hex: "EDEDED")
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -67,11 +71,11 @@ final class PhotoListView: UIView {
     
     private func setupAttributes() {
         self.statusView.do {
-            $0.backgroundColor = .lightGray
+            $0.backgroundColor = ViewConstraint.navigationColor
         }
         
         self.navigationView.do {
-            $0.backgroundColor = .lightGray
+            $0.backgroundColor = ViewConstraint.navigationColor
             $0.configure(.init(type: .back, title: nil))
         }
         
