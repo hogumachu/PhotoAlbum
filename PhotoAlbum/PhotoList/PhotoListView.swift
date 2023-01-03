@@ -27,6 +27,8 @@ final class PhotoListView: UIView {
     
     private struct ViewConstraint {
         static let navigationColor = UIColor(hex: "EDEDED")
+        static let cellSpacing: CGFloat = 4
+        static let columns: CGFloat = 3
     }
     
     override init(frame: CGRect) {
@@ -80,10 +82,11 @@ final class PhotoListView: UIView {
         }
         
         let flowLayout = UICollectionViewFlowLayout().then {
+            let cellWidth: CGFloat = (UIScreen.width - ViewConstraint.cellSpacing * (ViewConstraint.columns - 1)) / ViewConstraint.columns
             $0.scrollDirection = .vertical
-            let width: CGFloat = (UIScreen.width - 8) / 3
-            $0.itemSize = CGSize(width: width, height: width)
-            $0.minimumInteritemSpacing = 4
+            $0.itemSize = CGSize(width: cellWidth, height: cellWidth)
+            $0.minimumInteritemSpacing = ViewConstraint.cellSpacing
+            $0.minimumLineSpacing = ViewConstraint.cellSpacing
         }
         
         self.collectionView.do {
