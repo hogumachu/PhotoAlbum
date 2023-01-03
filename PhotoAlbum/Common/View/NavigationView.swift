@@ -66,6 +66,10 @@ final class NavigationView: UIView {
         self.titleLabel.text = model.title
     }
     
+    func updateTitle(_ title: String?) {
+        self.titleLabel.text = title
+    }
+    
     private func setupLayout() {
         self.addSubview(self.leftButton)
         self.leftButton.snp.makeConstraints { make in
