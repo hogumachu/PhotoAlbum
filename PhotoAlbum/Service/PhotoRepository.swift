@@ -15,6 +15,7 @@ protocol PhotoRepositoryDelegate: AnyObject {
 }
 
 final class PhotoRepository: NSObject {
+    
     static let shared = PhotoRepository()
     
     weak var delegate: PhotoRepositoryDelegate?
@@ -30,7 +31,6 @@ final class PhotoRepository: NSObject {
         
         let options = PHFetchOptions().then {
             $0.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-            $0.predicate = NSPredicate(format: "mediaType == \(PHAssetMediaType.image.rawValue)")
         }
         
         let defaultAlbum = PHAsset.fetchAssets(with: options)
@@ -73,7 +73,9 @@ final class PhotoRepository: NSObject {
 }
 
 extension PhotoRepository: PHPhotoLibraryChangeObserver {
+    
     func photoLibraryDidChange(_ changeInstance: PHChange) {
         self.delegate?.photoRepositoryPhotoLibraryDidChange(self)
     }
+    
 }
