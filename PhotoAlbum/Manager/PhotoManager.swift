@@ -19,7 +19,9 @@ final class PhotoManager {
         let requestID = PHCachingImageManager
             .default()
             .requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: nil) { image, _ in
-                completion?(image)
+                DispatchQueue.main.async {
+                    completion?(image)
+                }
             }
         
         self.requestIDs[identifier] = requestID
