@@ -45,6 +45,7 @@ final class AlbumListTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
+        PhotoManager.shared.cancelRequestImage(from: self.thumbnailImageView)
         self.titleLabel.text = nil
         self.imageCountLabel.text = nil
         self.thumbnailImageView.image = nil
@@ -52,7 +53,11 @@ final class AlbumListTableViewCell: UITableViewCell {
     
     func configure(_ model: AlbumListTableViewCellModel) {
         if let asset = model.thumbnailAsset {
-            PhotoManager.requestImage(for: asset, size: ViewConstraint.thumbnailSize) { [weak self] image in
+            PhotoManager.shared.requestImage(
+                from: self.thumbnailImageView,
+                for: asset,
+                size: ViewConstraint.thumbnailSize
+            ) { [weak self] image in
                 self?.thumbnailImageView.image = image
             }
         }

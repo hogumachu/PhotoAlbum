@@ -32,12 +32,17 @@ final class PhotoListCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
+        PhotoManager.shared.cancelRequestImage(from: self.imageView)
         self.imageView.image = nil
     }
     
     func configure(_ model: PhotoListCollectionViewCellModel) {
         guard let asset = model.asset else { return }
-        PhotoManager.requestImage(for: asset, size: self.bounds.size) { [weak self] image in
+        PhotoManager.shared.requestImage(
+            from: self.imageView,
+            for: asset,
+            size: self.bounds.size
+        ) { [weak self] image in
             self?.imageView.image = image
         }
     }
