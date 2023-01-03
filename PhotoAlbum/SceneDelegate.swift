@@ -19,8 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         self.window = window
-        let viewController = ViewController()
-        window.rootViewController = viewController
+        let rootViewController = UINavigationController(rootViewController:  AlbumListViewController(viewModel: .init()))
+        rootViewController.isNavigationBarHidden = true
+        rootViewController.hidesBottomBarWhenPushed = true
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
 
