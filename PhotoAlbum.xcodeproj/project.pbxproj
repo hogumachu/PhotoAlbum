@@ -13,6 +13,11 @@
 		F1F12F4F2964320D00D8CE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F4E2964320D00D8CE21 /* ViewController.swift */; };
 		F1F12F542964320F00D8CE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F12F532964320F00D8CE21 /* Assets.xcassets */; };
 		F1F12F572964320F00D8CE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F12F552964320F00D8CE21 /* LaunchScreen.storyboard */; };
+		F1F12F602964343E00D8CE21 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F5F2964343E00D8CE21 /* Array+.swift */; };
+		F1F12F622964346300D8CE21 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F612964346300D8CE21 /* UIColor+.swift */; };
+		F1F12F642964350800D8CE21 /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */; };
+		F1F12F662964352F00D8CE21 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F652964352F00D8CE21 /* UITableView+.swift */; };
+		F1F12F682964354300D8CE21 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F672964354300D8CE21 /* UICollectionView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		F1F12F532964320F00D8CE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F12F562964320F00D8CE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F12F582964320F00D8CE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F12F5F2964343E00D8CE21 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		F1F12F612964346300D8CE21 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SnapKit.swift"; sourceTree = "<group>"; };
+		F1F12F652964352F00D8CE21 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		F1F12F672964354300D8CE21 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		F1F12F492964320D00D8CE21 /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				F1F12F5E2964342100D8CE21 /* Extension */,
 				F1F12F4A2964320D00D8CE21 /* AppDelegate.swift */,
 				F1F12F4C2964320D00D8CE21 /* SceneDelegate.swift */,
 				F1F12F4E2964320D00D8CE21 /* ViewController.swift */,
@@ -86,6 +97,18 @@
 				F1F12F582964320F00D8CE21 /* Info.plist */,
 			);
 			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		F1F12F5E2964342100D8CE21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F5F2964343E00D8CE21 /* Array+.swift */,
+				F1F12F612964346300D8CE21 /* UIColor+.swift */,
+				F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */,
+				F1F12F652964352F00D8CE21 /* UITableView+.swift */,
+				F1F12F672964354300D8CE21 /* UICollectionView+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F12F4F2964320D00D8CE21 /* ViewController.swift in Sources */,
+				F1F12F642964350800D8CE21 /* UIView+SnapKit.swift in Sources */,
+				F1F12F682964354300D8CE21 /* UICollectionView+.swift in Sources */,
+				F1F12F602964343E00D8CE21 /* Array+.swift in Sources */,
+				F1F12F662964352F00D8CE21 /* UITableView+.swift in Sources */,
 				F1F12F4B2964320D00D8CE21 /* AppDelegate.swift in Sources */,
 				F1F12F4D2964320D00D8CE21 /* SceneDelegate.swift in Sources */,
+				F1F12F622964346300D8CE21 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
