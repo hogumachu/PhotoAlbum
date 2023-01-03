@@ -25,6 +25,13 @@
 		F1F12F782964471E00D8CE21 /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F772964471E00D8CE21 /* PhotoRepository.swift */; };
 		F1F12F7B29645B5600D8CE21 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7A29645B5600D8CE21 /* Album.swift */; };
 		F1F12F7E296461EF00D8CE21 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */; };
+		F1F12F85296471C300D8CE21 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */; };
+		F1F12F87296471C900D8CE21 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */; };
+		F1F12F89296471CE00D8CE21 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F88296471CE00D8CE21 /* PhotoListView.swift */; };
+		F1F12F8B296471D600D8CE21 /* PhtoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */; };
+		F1F12F8D2964778E00D8CE21 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8C2964778E00D8CE21 /* Photo.swift */; };
+		F1F12F8F29647B9900D8CE21 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */; };
+		F1F12F9129647F5600D8CE21 /* PHAsset+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F12F9029647F5600D8CE21 /* PHAsset+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		F1F12F772964471E00D8CE21 /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
 		F1F12F7A29645B5600D8CE21 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		F1F12F88296471CE00D8CE21 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhtoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1F12F8C2964778E00D8CE21 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		F1F12F9029647F5600D8CE21 /* PHAsset+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 				F1F12F7C296461E300D8CE21 /* Manager */,
 				F1F12F7229643AD600D8CE21 /* Common */,
 				F1F12F69296435C100D8CE21 /* AlbumList */,
+				F1F12F83296471AB00D8CE21 /* PhotoList */,
 				F1F12F532964320F00D8CE21 /* Assets.xcassets */,
 				F1F12F552964320F00D8CE21 /* LaunchScreen.storyboard */,
 				F1F12F582964320F00D8CE21 /* Info.plist */,
@@ -124,6 +139,8 @@
 				F1F12F632964350800D8CE21 /* UIView+SnapKit.swift */,
 				F1F12F652964352F00D8CE21 /* UITableView+.swift */,
 				F1F12F672964354300D8CE21 /* UICollectionView+.swift */,
+				F1F12F8E29647B9900D8CE21 /* UIScreen+.swift */,
+				F1F12F9029647F5600D8CE21 /* PHAsset+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -168,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F1F12F7A29645B5600D8CE21 /* Album.swift */,
+				F1F12F8C2964778E00D8CE21 /* Photo.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -178,6 +196,17 @@
 				F1F12F7D296461EF00D8CE21 /* PhotoManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		F1F12F83296471AB00D8CE21 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				F1F12F84296471C300D8CE21 /* PhotoListViewController.swift */,
+				F1F12F86296471C900D8CE21 /* PhotoListViewModel.swift */,
+				F1F12F88296471CE00D8CE21 /* PhotoListView.swift */,
+				F1F12F8A296471D600D8CE21 /* PhtoListCollectionViewCell.swift */,
+			);
+			path = PhotoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,16 +327,23 @@
 				F1F12F7129643A4800D8CE21 /* AlbumListView.swift in Sources */,
 				F1F12F642964350800D8CE21 /* UIView+SnapKit.swift in Sources */,
 				F1F12F7E296461EF00D8CE21 /* PhotoManager.swift in Sources */,
+				F1F12F9129647F5600D8CE21 /* PHAsset+.swift in Sources */,
+				F1F12F8D2964778E00D8CE21 /* Photo.swift in Sources */,
 				F1F12F682964354300D8CE21 /* UICollectionView+.swift in Sources */,
+				F1F12F89296471CE00D8CE21 /* PhotoListView.swift in Sources */,
 				F1F12F602964343E00D8CE21 /* Array+.swift in Sources */,
 				F1F12F6D29643A3500D8CE21 /* AlbumListViewController.swift in Sources */,
 				F1F12F662964352F00D8CE21 /* UITableView+.swift in Sources */,
 				F1F12F6B296435D900D8CE21 /* AlbumListTableViewCell.swift in Sources */,
 				F1F12F7529643AEB00D8CE21 /* NavigationView.swift in Sources */,
+				F1F12F87296471C900D8CE21 /* PhotoListViewModel.swift in Sources */,
 				F1F12F7B29645B5600D8CE21 /* Album.swift in Sources */,
 				F1F12F782964471E00D8CE21 /* PhotoRepository.swift in Sources */,
 				F1F12F4B2964320D00D8CE21 /* AppDelegate.swift in Sources */,
+				F1F12F8F29647B9900D8CE21 /* UIScreen+.swift in Sources */,
+				F1F12F85296471C300D8CE21 /* PhotoListViewController.swift in Sources */,
 				F1F12F4D2964320D00D8CE21 /* SceneDelegate.swift in Sources */,
+				F1F12F8B296471D600D8CE21 /* PhtoListCollectionViewCell.swift in Sources */,
 				F1F12F622964346300D8CE21 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

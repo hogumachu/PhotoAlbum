@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import Then
 import RxSwift
+import Photos
 
 final class AlbumListViewController: UIViewController {
     
@@ -53,6 +54,9 @@ final class AlbumListViewController: UIViewController {
             
         case .showAlert:
             self.showAlertController()
+            
+        case .showPhotoList(let collection):
+            self.showPhotoList(collection: collection)
         }
     }
     
@@ -78,6 +82,12 @@ final class AlbumListViewController: UIViewController {
         guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
         guard UIApplication.shared.canOpenURL(url) else { return }
         UIApplication.shared.open(url, options: [:])
+    }
+    
+    private func showPhotoList(collection: PHAssetCollection) {
+        let viewModel = PhotoListViewModel(collection: collection)
+        let viewController = PhotoListViewController(viewModel: viewModel)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     private let listView = AlbumListView(frame: .zero)
