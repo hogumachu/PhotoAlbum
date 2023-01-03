@@ -96,15 +96,6 @@ extension PhotoListViewController: PhotoListViewDelegate {
         self.viewModel.cellDidSelect(at: indexPath)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (UIScreen.width - 8) / 3
-        return CGSize(width: width, height: width)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
-    }
-    
 }
 
 extension PhotoListViewController: PhotoListViewDataSource {
