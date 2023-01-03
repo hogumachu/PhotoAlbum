@@ -60,7 +60,11 @@ final class PhotoRepository: NSObject {
     func getPhotoList(collection: PHAssetCollection, completion: (([Photo]) -> Void)? = nil) {
         var photos: [Photo] = []
         
-        PHAsset.fetchAssets(in: collection, options: nil)
+        let options = PHFetchOptions().then {
+            $0.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        }
+        
+        PHAsset.fetchAssets(in: collection, options: options)
             .enumerateObjects { asset, _, _ in
                 photos.append(.init(asset: asset))
             }
